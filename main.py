@@ -29,7 +29,7 @@ icon_inactive = create_image("red")
 
 def is_youtube_open():
     windows = gw.getAllWindows()
-    youtube_keywords = ['youtube', 'youtube.com']
+    youtube_keywords = ['youtube', 'youtube.com', 'YouTube']
 
     for window in windows:
         title = window.title.lower()
