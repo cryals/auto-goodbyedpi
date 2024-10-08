@@ -14,7 +14,7 @@ with open('config.json', 'r') as f:
 goodbyedpi_path = config["goodbyedpi_path"]
 
 goodbyedpi_process = None
-delay_before_closing = 30  # задержка перед закрытием в секундах
+delay_before_closing = 1  # задержка перед закрытием в секундах
 youtube_last_seen = 0
 
 # Создаем иконки для трея
@@ -29,7 +29,7 @@ icon_inactive = create_image("red")
 
 def is_youtube_open():
     windows = gw.getAllWindows()
-    youtube_keywords = ['youtube', 'youtube.com', 'YouTube']
+    youtube_keywords = ['youtube', 'youtube.com', 'YouTube', 'Discord', 'discord']
 
     for window in windows:
         title = window.title.lower()
